@@ -1,0 +1,29 @@
+[package]
+name = "ngenate_flex_storage"
+version = "0.0.1"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+guardian = "1.0.2"
+indexmap = "1.7.0"
+
+# My custom fork and branch off version 0.2.5 that uses TryInto instead of Into
+xsparseset = { git = "https://github.com/mmulli/xsparseset", branch = "mmulli/try_into_patch" }
+num-derive = "0.3"
+num-traits = "0.2.*"
+downcast-rs = "1.2.0"
+sendable = "0.6.1"
+
+[features]
+
+# Experimental tests act as an extension of internal design documentation. They are 
+# a paper trail for some approaches that were tried. They do not directly provide value to consumers 
+# of the library so may move to a separate git only crate in the near future
+default = ["experiments"]
+experiments = []
+
+[dev-dependencies]
+
+# Used by tests/experiments to demonstrate some alternative approaches that didn't make the cut
+parking_lot = "0.12.1"

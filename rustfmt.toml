@@ -1,0 +1,14 @@
+unstable_features = true
+
+# Some of these may be unstable 
+max_width = 100
+wrap_comments = true 
+comment_width = 160
+
+# rustfmt 2 has preserve_block_start_blank_lines. When / if that becomes stable then the below brace style overrides can be removed
+# Until then, these help with readability of the first block of statements
+brace_style = "AlwaysNextLine" 
+control_brace_style = "AlwaysNextLine" 
+
+# Requires rustfmt 2 > (Not currently released on rust table or nightly so needs to be installed manually from rustfmt repo)
+# preserve_block_start_blank_lines = true
