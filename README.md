@@ -1,3 +1,5 @@
+PLEASE NOTE: This project is no longer maintained and was quite experimental in nature so has been archived.
+
 Flex Storage empowers API's to be more abstract over data by focusing on shared traits and flexible casting. It provides
 Storage Handles to point to either concrete Storage types or trait objects depending on if dynamic or static dispatch is
 needed, and casting infrastructure to perform inter trait-object casts, trait-object to type casts and type un-sizing to
